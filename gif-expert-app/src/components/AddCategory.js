@@ -12,7 +12,7 @@ const AddCategory = ({ setCategories }) => {
 		event.preventDefault();
 
 		if (inputValue.trim().length > 2) {
-			setCategories((arr) => [...arr, inputValue]);
+			setCategories((arr) => [inputValue, ...arr]);
 			setInputValue('');
 		}
 	};
